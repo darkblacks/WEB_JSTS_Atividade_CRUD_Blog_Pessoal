@@ -4,6 +4,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { UsuarioModule } from './usuario/usuario.module';
+import { PostagemModule } from './postagem/postagem.module';
 
 @Module({
   imports: [
@@ -41,6 +42,7 @@ import { UsuarioModule } from './usuario/usuario.module';
     }),
 
     UsuarioModule,
+    PostagemModule,
   ],
   controllers: [AppController],
   providers: [AppService],
