@@ -1,0 +1,30 @@
+# dependências
+node_modules/
+
+# build
+dist/
+coverage/
+
+# arquivos de ambiente
+.env
+.env.*
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# sistema / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# banco local de teste
+*.sqlite
+*.sqlite3
+
+# arquivos temporários
+*.tmp
+*.temp
