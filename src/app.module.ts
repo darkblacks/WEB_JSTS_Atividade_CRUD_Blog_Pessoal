@@ -2,8 +2,8 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 
 import { UsuarioModule } from './usuario/usuario.module';
-import { PostagemModule } from './postagem/postagem.module';
 import { TemaModule } from './tema/tema.module';
+import { PostagemModule } from './postagem/postagem.module';
 
 @Module({
   imports: [
@@ -15,8 +15,8 @@ import { TemaModule } from './tema/tema.module';
     }),
 
     UsuarioModule,
-    PostagemModule,
     TemaModule,
+    PostagemModule,
   ],
 })
 export class AppModule {}
