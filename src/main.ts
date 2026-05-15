@@ -16,6 +16,8 @@ async function bootstrap() {
     .setDescription('API do projeto Blog Pessoal')
     .setVersion('1.0')
     .addBearerAuth()
+    .addServer('https://web-jsts-atividade-crud-blog-pessoal.onrender.com')
+    .addServer('http://localhost:3000')
     .build();
 
   const document = SwaggerModule.createDocument(app, config);
@@ -27,7 +29,7 @@ async function bootstrap() {
   await app.listen(port);
 
   console.log(`Aplicação rodando na porta ${port}`);
-  console.log(`Swagger disponível em: http://localhost:${port}/swagger`);
+  console.log(`Swagger disponível em: /swagger`);
 }
 
 bootstrap();
